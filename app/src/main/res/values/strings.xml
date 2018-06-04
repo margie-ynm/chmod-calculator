@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Chmod Calculator</string>
+    <string name="absolute_notation">000</string>
 </resources>

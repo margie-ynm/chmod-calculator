@@ -16,8 +16,9 @@
         android:layout_height="wrap_content"
         android:text="Chmod Calculator"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="25dp"
-        android:textSize="25sp"
+        android:textSize="28sp"
         android:textAllCaps="true"
         />
 
@@ -35,7 +36,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="USER"/>
+                android:text="USER"
+                android:textSize="18sp"/>
 
             <CheckBox
                 android:id="@+id/user_read"
@@ -66,7 +68,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GROUP"/>
+                android:text="GROUP"
+                android:textSize="18sp"/>
 
             <CheckBox
                 android:id="@+id/group_read"
@@ -97,7 +100,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OTHER"/>
+                android:text="OTHER"
+                android:textSize="18sp"/>
 
             <CheckBox
                 android:id="@+id/other_read"
@@ -117,10 +121,23 @@
                 android:layout_height="wrap_content"
                 android:text="Execute"/>
 
-
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absolute Notation (octal)"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="22sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/absolute_notation"
+        android:layout_gravity="center"
+        android:textSize="24sp"/>
 
 </LinearLayout>
