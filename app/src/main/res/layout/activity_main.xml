@@ -43,19 +43,22 @@
                 android:id="@+id/user_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"/>
+                android:text="Read"
+                android:onClick="onCheckboxClicked"/>
 
             <CheckBox
                 android:id="@+id/user_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"/>
+                android:text="Write"
+                android:onClick="onCheckboxClicked"/>
 
             <CheckBox
                 android:id="@+id/user_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"/>
+                android:text="Execute"
+                android:onClick="onCheckboxClicked"/>
 
 
         </LinearLayout>
@@ -75,19 +78,22 @@
                 android:id="@+id/group_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"/>
+                android:text="Read"
+                android:onClick="onCheckboxClicked"/>
 
             <CheckBox
                 android:id="@+id/group_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"/>
+                android:text="Write"
+                android:onClick="onCheckboxClicked"/>
 
             <CheckBox
                 android:id="@+id/group_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"/>
+                android:text="Execute"
+                android:onClick="onCheckboxClicked"/>
 
 
         </LinearLayout>
@@ -107,19 +113,22 @@
                 android:id="@+id/other_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"/>
+                android:text="Read"
+                android:onClick="onCheckboxClicked"/>
 
             <CheckBox
                 android:id="@+id/other_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"/>
+                android:text="Write"
+                android:onClick="onCheckboxClicked"/>
 
             <CheckBox
                 android:id="@+id/other_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"/>
+                android:text="Execute"
+                android:onClick="onCheckboxClicked"/>
 
         </LinearLayout>
 
@@ -134,6 +143,7 @@
         android:layout_marginTop="25dp"
         android:textSize="22sp"/>
     <TextView
+        android:id="@+id/answerField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/absolute_notation"
