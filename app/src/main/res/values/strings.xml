@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Chmod Calculator</string>
     <string name="absolute_notation">000</string>
+    <string name="about">About</string>
+    <string name="about_description">A simple chmod calculator created by Margie YNM</string>
+    <string name="ok_button">Ok</string>
 </resources>
