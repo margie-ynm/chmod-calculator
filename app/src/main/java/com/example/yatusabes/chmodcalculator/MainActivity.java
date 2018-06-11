@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int numPermission = 0;
+    String outputString;
     private static final String LOG_TAG = "MainActivity";
 
     @Override
@@ -16,8 +17,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        showOutput();
 
+    }
 
+    private void showOutput() {
+        if (numPermission < 10) {
+            outputString = "00" + ("" + numPermission);
+        } else if (numPermission < 100) {
+            outputString = "0" + ("" + numPermission);
+        } else {
+            outputString = ("" + numPermission);
+        }
+        TextView answerField = (TextView) findViewById(R.id.answerField);
+        answerField.setText(outputString);
     }
 
 
@@ -86,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
+        showOutput();
     }
 
 
