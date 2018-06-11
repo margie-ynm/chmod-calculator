@@ -12,4 +12,8 @@
         <item name="android:windowCloseOnTouchOutside">false</item>
     </style>
 
+    <style name="MainTextSize">
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>
