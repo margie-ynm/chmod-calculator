@@ -16,4 +16,12 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="EmphasizeText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">28sp</item>
+
+    </style>
+
 </resources>
