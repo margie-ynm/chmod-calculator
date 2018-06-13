@@ -42,22 +42,19 @@
                 android:id="@+id/user_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Read"/>
 
             <CheckBox
                 android:id="@+id/user_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Write"/>
 
             <CheckBox
                 android:id="@+id/user_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Execute"/>
 
 
         </LinearLayout>
@@ -77,22 +74,19 @@
                 android:id="@+id/group_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Read"/>
 
             <CheckBox
                 android:id="@+id/group_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Write"/>
 
             <CheckBox
                 android:id="@+id/group_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Execute"/>
 
 
         </LinearLayout>
@@ -106,29 +100,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="OTHER"
-                style="@style/MainTextSize"
-                />
+                style="@style/MainTextSize" />
 
             <CheckBox
                 android:id="@+id/other_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Read"/>
 
             <CheckBox
                 android:id="@+id/other_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Write"/>
 
             <CheckBox
                 android:id="@+id/other_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"
-                android:onClick="onCheckboxClicked"/>
+                android:text="Execute"/>
 
         </LinearLayout>
 
@@ -141,13 +131,51 @@
         android:text="Linux Permission:"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:textSize="22sp"/>
+        android:textSize="22sp" />
+
     <TextView
         android:id="@+id/answerField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/absolute_notation"
         android:layout_gravity="center"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        style="@style/EmphasizeText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/example1Field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e.g: chmod "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/secondAnswerField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 777 "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/example2Field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" path-to-file"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
 
 </LinearLayout>
