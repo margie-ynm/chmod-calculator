@@ -152,21 +152,25 @@
             android:id="@+id/example1Field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="e.g: chmod "
+            android:text="e.g: chmod"
+            android:layout_marginRight="3dp"
             android:textSize="16sp"/>
 
         <TextView
             android:id="@+id/secondAnswerField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" 777 "
+            android:text="777"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
             android:textSize="16sp"/>
 
         <TextView
+            android:layout_marginLeft="3dp"
             android:id="@+id/example2Field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" path-to-file"
+            android:text="@string/path_to_file"
             android:textSize="16sp"/>
 
     </LinearLayout>
