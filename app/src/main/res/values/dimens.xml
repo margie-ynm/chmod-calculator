@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize_path_to_file">16sp</dimen>
+    <dimen name="textsize_second_answer_display">16sp</dimen>
+    <dimen name="space_between_example_words">3dp</dimen>
+    <dimen name="margin_top_example_block">5dp</dimen>
+    <dimen name="textsize_linux_permission_value">24sp</dimen>
+    <dimen name="textsize_linux_permission_label">22sp</dimen>
+    <dimen name="margin_top_linux_permission_block">25dp</dimen>
+    <dimen name="margin_right_permission_blocks">10dp</dimen>
+    <dimen name="margin_bottom_chmod_calc_label">25dp</dimen>
+    <dimen name="padding_left_main_block">16dp</dimen>
+    <dimen name="padding_right_main_block">16dp</dimen>
+    <dimen name="padding_top_main_block">16dp</dimen>
+</resources>

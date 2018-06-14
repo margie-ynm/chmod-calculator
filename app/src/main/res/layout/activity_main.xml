@@ -6,18 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.yatusabes.chmodcalculator.MainActivity"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    >
+    android:paddingLeft="@dimen/padding_left_main_block"
+    android:paddingRight="@dimen/padding_right_main_block"
+    android:paddingTop="@dimen/padding_top_main_block">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chmod Calculator"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="@dimen/margin_bottom_chmod_calc_label"
         android:textAllCaps="true"
         style="@style/EmphasizeText"/>
 
@@ -30,64 +28,66 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/margin_right_permission_blocks">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="USER"
-                style="@style/MainTextSize"/>
+                android:text="@string/user_main_label"
+                style="@style/MainTextSize"
+                android:textAllCaps="true"/>
 
             <CheckBox
                 android:id="@+id/user_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"/>
+                android:text="@string/user_read_label"/>
 
             <CheckBox
                 android:id="@+id/user_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"/>
+                android:text="@string/user_write_label"/>
 
             <CheckBox
                 android:id="@+id/user_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"/>
-
+                android:text="@string/user_execute_label"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/margin_right_permission_blocks">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GROUP"
-                style="@style/MainTextSize"/>
+                android:text="@string/group_main_label"
+                style="@style/MainTextSize"
+                android:textAllCaps="true"/>
 
             <CheckBox
                 android:id="@+id/group_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"/>
+                android:text="@string/group_read_label"/>
 
             <CheckBox
                 android:id="@+id/group_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"/>
+                android:text="@string/group_write_label"/>
 
             <CheckBox
                 android:id="@+id/group_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"/>
-
+                android:text="@string/group_execute_label"/>
 
         </LinearLayout>
 
@@ -99,87 +99,55 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OTHER"
-                style="@style/MainTextSize" />
+                android:text="@string/other_main_label"
+                style="@style/MainTextSize"
+                android:textAllCaps="true"/>
 
             <CheckBox
                 android:id="@+id/other_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Read"/>
+                android:text="@string/other_read_label"/>
 
             <CheckBox
                 android:id="@+id/other_write"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write"/>
+                android:text="@string/other_write_label"/>
 
             <CheckBox
                 android:id="@+id/other_execute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Execute"/>
+                android:text="@string/other_execute_label"/>
 
         </LinearLayout>
 
-
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Linux Permission:"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:textSize="22sp" />
-
-    <TextView
-        android:id="@+id/answerField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/absolute_notation"
-        android:layout_gravity="center"
-        android:textSize="24sp"
-        style="@style/EmphasizeText"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/example1Field"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="e.g: chmod"
-            android:layout_marginRight="3dp"
-            android:textSize="16sp"/>
+        android:layout_marginTop="@dimen/margin_top_linux_permission_block">
 
         <TextView
-            android:id="@+id/secondAnswerField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="777"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:textSize="16sp"/>
+            android:text="Linux Permission:"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize_linux_permission_label" />
 
         <TextView
-            android:layout_marginLeft="3dp"
-            android:id="@+id/example2Field"
+            android:id="@+id/answerField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/path_to_file"
-            android:textSize="16sp"/>
+            android:text="@string/linux_permission_value"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize_linux_permission_value"
+            style="@style/EmphasizeText"/>
 
     </LinearLayout>
-
-
-
-
-
-
-
 
 </LinearLayout>

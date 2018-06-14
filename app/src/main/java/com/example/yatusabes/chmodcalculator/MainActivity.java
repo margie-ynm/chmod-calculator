@@ -14,19 +14,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private int numPermission = 0;
     private String outputString;
-    private static final String LOG_TAG = "MainActivity";
+//    private static final String LOG_TAG = "MainActivity";
 
-    private CheckBox checkboxUserRead;
-    private CheckBox checkboxUserWrite;
-    private CheckBox checkboxUserExecute;
-
-    private CheckBox checkboxGroupRead;
-    private CheckBox checkboxGroupWrite;
-    private CheckBox checkboxGroupExecute;
-
-    private CheckBox checkboxOtherRead;
-    private CheckBox checkboxOtherWrite;
-    private CheckBox checkboxOtherExecute;
+    private CheckBox checkbox;
 
     private CompoundButton.OnCheckedChangeListener listener;
 
@@ -52,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 int val = 0;
 
                 switch (id) {
-                    case R.id.other_execute: val = 1; break;
-                    case R.id.other_read: val = 2; break;
-                    case R.id.other_write: val = 4; break;
-                    case R.id.group_execute: val = 10; break;
-                    case R.id.group_read: val = 20; break;
-                    case R.id.group_write: val = 40; break;
+                    case R.id.user_read: val = 400; break;
+                    case R.id.user_write: val = 200; break;
                     case R.id.user_execute: val = 100; break;
-                    case R.id.user_read: val = 200; break;
-                    case R.id.user_write: val = 400; break;
+                    case R.id.group_read: val = 40; break;
+                    case R.id.group_write: val = 20; break;
+                    case R.id.group_execute: val = 10; break;
+                    case R.id.other_read: val = 4; break;
+                    case R.id.other_write: val = 2; break;
+                    case R.id.other_execute: val = 1; break;
                 }
                 if (isChecked) {
                     numPermission += val;
@@ -74,16 +64,14 @@ public class MainActivity extends AppCompatActivity {
         for (int id : listenerIds) {
             createListener(id);
         }
-
         showOutput();
-
     }
 
     private void createListener(int id) {
-        checkboxOtherExecute = (CheckBox) findViewById(id);
-        checkboxOtherExecute.setChecked(false);
+        checkbox = (CheckBox) findViewById(id);
+        checkbox.setChecked(false);
 
-        checkboxOtherExecute.setOnCheckedChangeListener(listener);
+        checkbox.setOnCheckedChangeListener(listener);
     }
 
     private void showOutput() {
@@ -97,8 +85,7 @@ public class MainActivity extends AppCompatActivity {
         TextView answerField = (TextView) findViewById(R.id.answerField);
         answerField.setText(outputString);
 
-        TextView secondAnswerField = (TextView) findViewById(R.id.secondAnswerField);
-        secondAnswerField.setText(outputString);
+
     }
 
 

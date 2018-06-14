@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">Chmod Calculator</string>
-    <string name="absolute_notation">000</string>
+    <string name="linux_permission_value">000</string>
     <string name="about">About</string>
     <string name="about_description">A simple chmod calculator created by Margie YNM</string>
     <string name="ok_button">Ok</string>
-    <string name="path_to_file"><![CDATA[<path-to-file>]]></string>
+    <string name="path_to_file">path-to-file</string>
+    <string name="eg_chmod">e.g: chmod</string>
+    <string name="other_execute_label">Execute</string>
+    <string name="other_write_label">Write</string>
+    <string name="other_read_label">Read</string>
+    <string name="other_main_label">OTHER</string>
+    <string name="group_execute_label">Execute</string>
+    <string name="group_write_label">Write</string>
+    <string name="group_read_label">Read</string>
+    <string name="group_main_label">GROUP</string>
+    <string name="user_execute_label">Execute</string>
+    <string name="user_write_label">Write</string>
+    <string name="user_read_label">Read</string>
+    <string name="user_main_label">USER</string>
 </resources>
