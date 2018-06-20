@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\student\Desktop\chmod-calculator\ChmodCalculator.iml" filepath="C:\Users\student\Desktop\chmod-calculator\ChmodCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\student\Desktop\chmod-calculator\app\app.iml" filepath="C:\Users\student\Desktop\chmod-calculator\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/chmod-calculator.iml" filepath="$PROJECT_DIR$/chmod-calculator.iml" />
-      <module fileurl="file://C:\Users\student\Desktop\chmod-calculator\chmod-calculator.iml" filepath="C:\Users\student\Desktop\chmod-calculator\chmod-calculator.iml" />
     </modules>
   </component>
 </project>
